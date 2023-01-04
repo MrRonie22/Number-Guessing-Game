@@ -1,0 +1,163 @@
+.mainPanel{
+    width: 450px;
+    height: 300px;
+    margin: 0;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: beige;
+    border: 5px ridge rgb(161, 160, 160);
+    border-radius: 15px;
+    box-shadow: 0px 10px 35px rgb(183, 184, 229);
+    font-family: verdana;
+}
+
+img{
+    width: 120px;
+    height: 120px;
+    position: fixed;
+    top: -1%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1{
+    text-align: center;
+    font-family: verdana;
+    color: rgb(68, 9, 122);
+}
+
+hr{
+    height: 2px;
+    border: 3px outset;
+}
+
+span{
+    color: green;
+    padding-left: 98px;
+    padding-right: 97px;
+}
+
+input{
+    width: 55%;
+    margin-top: 20px;
+    height: 40px;
+    font-size: 30px;
+    border: 2px solid green;
+    box-shadow: 1px 1px 5px rgb(121, 230, 166);
+    border-radius: 15px;
+    background-color: transparent;
+    text-align: center;
+    top: 60%;
+    left: 50%;
+    transform: translate(38%, -10%);
+}
+
+input::placeholder{
+    font-size: 20px;
+}
+
+button{
+    width: 57%;
+    height: 40px;
+    margin-top: 7px;
+    color:cornsilk;
+    font-size: 18px;
+    background-color: green;
+    box-shadow: 0px 2px 1px rgb(11, 83, 11);
+    border: 1px outset green;
+    border-radius: 15px;
+    top: 60%;
+    left: 50%;
+    transform: translate(38%, -10%);
+    transition: 0.5ms;
+}
+
+button:hover{
+    color: white;
+    border: none;
+    background-color: rgb(41, 194, 41);
+    box-shadow: 0px 2px 5px rgb(4, 85, 42);
+}
+
+p{
+    margin-top: 60px;
+    text-align: center;
+    color: rgb(156, 150, 170);
+    border: 1.9px outset rgb(238, 229, 196);
+    border-radius: 15px;
+    box-shadow: -4px 5px 3px rgb(241, 230, 213);
+}
+
+@media only screen and (max-width:500px)  {
+    .mainPanel{
+        width: 310px;
+        height: 300px;
+        margin: 0 ao;
+        padding: 30px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: beige;
+        border: 5px ridge rgb(161, 160, 160);
+        border-radius: 15px;
+        box-shadow: 0px 10px 35px rgb(183, 184, 229);
+        font-family: verdana;
+    }
+    h1{
+        font-size: 30px;
+    }
+    span{
+        color: green;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    p{
+        margin-top: 25px;
+        text-align: center;
+        color: rgb(156, 150, 170);
+        border: 1.9px outset rgb(238, 229, 196);
+        border-radius: 15px;
+        box-shadow: -4px 5px 3px rgb(241, 230, 213);
+    }
+}
+
+@media only screen and (max-height:420px)  {
+    .mainPanel{
+        width: 450px;
+        height: 250px;
+        margin: 0;
+        padding: 30px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: beige;
+        border: 5px ridge rgb(161, 160, 160);
+        border-radius: 15px;
+        box-shadow: 0px 10px 35px rgb(183, 184, 229);
+        font-family: verdana;
+    }
+    h1{
+        font-size: 25px;
+        margin-top: 17px;
+    }
+    span{
+        color: green;
+        padding-left: 99px;
+        padding-right: 99px;
+    }
+
+    p{
+        margin-top: 25px;
+        text-align: center;
+        color: rgb(156, 150, 170);
+        border: 1.9px outset rgb(238, 229, 196);
+        border-radius: 15px;
+        box-shadow: -4px 5px 3px rgb(241, 230, 213);
+    }
+}
