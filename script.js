@@ -25,6 +25,12 @@ document.getElementById("submit").onclick = function(){
             window.alert("Incorrect! \n Correct answer is :" +answer); 
         }
     }
+}
 
-    
+var numInput = document.getElementById("input");
+numInput.addEventListener("keypress", function(event){
+    if (event.Key == "Enter"){
+        document.preventDefault();
+        document.getElementById("submit").click();
+    }
 }
