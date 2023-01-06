@@ -2,6 +2,7 @@
 let guesses = 0;
 let score = 0;
 
+//Submit
 let yourScore = document.getElementById("score");
 document.getElementById("submit").onclick = function(){
 
@@ -27,10 +28,12 @@ document.getElementById("submit").onclick = function(){
     }
 }
 
+
+//Enter
 var numInput = document.getElementById("input");
 numInput.addEventListener("keypress", function(event){
-    if (event.Key == "Enter"){
-        document.preventDefault();
+    if (event.key === "Enter"){
+        event.preventDefault();
         document.getElementById("submit").click();
     }
-}
+});
