@@ -6,7 +6,7 @@ let score = 0;
 //Enter
 var numInput = document.getElementById("input");
 numInput.addEventListener("keypress", function(event){
-    if (event.key === "Enter"){
+    if (event.key === "Enter" || event.code === "Space"){
         event.preventDefault();
         document.getElementById("submit").click();
     }
